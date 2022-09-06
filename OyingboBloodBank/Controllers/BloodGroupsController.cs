@@ -21,7 +21,11 @@ namespace OyingboBloodBank.Controllers
         // GET: BloodGroups
         public async Task<IActionResult> Index()
         {
-              return _context.BloodGroups != null ? 
+              return View();
+        }
+        public async Task<IActionResult> List()
+        {
+            return _context.BloodGroups != null ?
                           View(await _context.BloodGroups.ToListAsync()) :
                           Problem("Entity set 'MushinBloodBankContext.BloodGroups'  is null.");
         }
