@@ -48,11 +48,11 @@ namespace OyingboBloodBank.Controllers
             return View(bloodGroup);
         }
 
-        // GET: BloodGroups/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
+        //// GET: BloodGroups/Create
+        //public IActionResult Create()
+        //{
+        //    return View();
+        //}
 
         // POST: BloodGroups/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.

@@ -21,6 +21,11 @@ namespace OyingboBloodBank.Controllers
         // GET: Recipients
         public async Task<IActionResult> Index()
         {
+            
+            return View();
+        }
+        public async Task<IActionResult> List()
+        {
             var mushinBloodBankContext = _context.Recipients.Include(r => r.BloodType);
             return View(await mushinBloodBankContext.ToListAsync());
         }
